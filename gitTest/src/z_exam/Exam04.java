@@ -1,5 +1,5 @@
 package z_exam;
-import java.util.Arrays;
+import java.util.*;
 public class Exam04 {
 
 	public static void main(String[] args) {

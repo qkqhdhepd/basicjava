@@ -166,14 +166,14 @@ public class Array {
 //		System.out.println(Arrays.toString(shuffle));	//함수를 이용하여 모든 배열의 값을 출력
 		
 		//1~10사이의 난수를 500번 생성하고, 각 숫자가 생성된 횟수를 출력해주세요.
-//		int[] x = new int[1];
-//		int[] y = new int[500];
-//		
-//		for(int i = 0; i <1; i++){
-//			x[i] = (int)(Math.random()*10)+1;
-//			System.out.print(x[i]);
-//		}
-//		System.out.println();
+		int[] x = new int[1];
+		int[] y = new int[500];
+		
+		for(int i = 0; i <1; i++){
+			x[i] = (int)(Math.random()*10)+1;
+			System.out.print(x[i]);
+		}
+		System.out.println();
 //		for(int i = 0; i< x.length; i++){
 //			y[x[i]]++;
 //		}
@@ -182,19 +182,6 @@ public class Array {
 //		}
 		
 		//위 문제의 최소값, 최대값, 반복횟수를 입력 받아 각 숫자가 생성된 횟수를 출력해주세요.
-//		선생님 정답
-//		int[] counts = new int[10];
-//		
-//		for(int i = 0; i<500; i++){
-//			int random = (int)(Math.random()*10) +1;
-//			counts[random -1]++;
-//		}
-//		for(int i = 0; i< counts.length; i++){
-//			System.out.println(i + 1 +" : " + counts[i]);
-//		}
-		
-		//스캐너 생성 답 2번째
-		
 		
 //		Scanner scanner = new Scanner(System.in);
 //		System.out.println("최대값을 입력해주세요>");
@@ -231,25 +218,37 @@ public class Array {
 		//최대값과 최소값 사이의 숫자갯수 만큼 for문을 돌리면 몇개가 카운터 되었는지 알수가 있다.
 		//for문의 최대값과 최소값의 사이의 숫자만큼 배열에 저장이 되기 때문이다.
 		
-		//
-		Scanner s = new Scanner(System.in);
-		System.out.println("최소값>");
-		int min2 = Integer.parseInt(s.nextLine());
-		System.out.println("최대값>");
-		int max2 = Integer.parseInt(s.nextLine());
-		System.out.println("반복횟수>");
-		int repeat2 = Integer.parseInt(s.nextLine());
+//		int[] x = new int[500];
+//		int[] y = new int[500];
+//		
+//		for(int i = 0; i < x.length; i++){
+//			x[i] = (int)(Math.random()*10)+1;
+//			System.out.print(x[i]);
+//		}
+//		System.out.println();
+//		for(int i = 0; i< x.length; i++){
+//			y[x[i]]++;
+//		}
+//		for(int i = 1; i<=10; i++){
+//			System.out.println(i + "의 개수" +y[i]);
+//		}
 		
-		int[] counts = new int[max2 - min2 +1];
+		//1~10까지 5번을 반복해서 랜덤한 숫자를 표출해서 그 개수를 세시오.
+//		int[] x = new int[5];
+//		int[] y = new int[10];
+//		
+//		for(int i = 0; i < x.length; i++){
+//			x[i] = (int)(Math.random()*5)+1;
+//			System.out.print(x[i]);
+//		}
+//		System.out.println();
+//		for(int i = 0; i < x.length; i++){
+//			y[x[i]]++;
+//		}
+//		for(int i = 0; i <= x.length ; i++){
+//			System.out.println(i+"의 개수"+y[i]);
+//		}
 		
-		for(int i=0; i< repeat2; i++){
-			int random = (int)(Math.random()* (max2 - min2 +1))+min2;
-			counts[random - min2]++;
-		}
-		
-		for(int i =0; i< counts.length; i++){
-			System.out.println(min2 + " : " +counts[i]);
-		}
 		
 	}
 }

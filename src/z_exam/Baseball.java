@@ -1,82 +1,263 @@
 package z_exam;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 public class Baseball {
 
 	public static void main(String[] args) {
 		// 숫자야구게임을 만들어주세요.
 		
+//		
+//		int a = (int)(Math.random() *9)+1;
+//		int b = 1;
+//		int c = 1;
+//		int tmp = 0;
+//		int input = 0;
+//		
+//		while(a != (tmp = (int)(Math.random() *9)+1)){
+//			b = tmp;
+//		}
+//		while(a != (tmp = (int)(Math.random() *9)+1) && b != tmp){
+//			c = tmp;
+//		}
+//		int number = a*100 + b*10 + c;	
+//		
+//		System.out.println(number);
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		
+//		while( true ) {
+//			int s1 = 0;
+//			int b1 = 0;
+//			int o1 = 0;
+//			System.out.println("중복되지 않는 3자리수를 입력하세요:");
+//			input = scanner.nextInt();
+//			int x = input / 100;
+//			int y = input % 100 / 10;
+//			int z = input % 10;
+//			if(x == a){
+//				s1++;
+//			}
+//			if(y == b){
+//				s1++;
+//			}
+//			if(z == c){
+//				s1++;
+//			}
+//			if(x == b || x  == c){
+//				b1++;
+//			}else if(x == a && (x == b || x  == c)){
+//				b1++;
+//				
+//			}
+//			if(y == a || y  == c){
+//				b1++;
+//			}else if(y == b && (x == b || x  == c)){
+//				b1++;
+//				
+//			}			
+//			if(z == a || z  == b){
+//				b1++;
+//			}else if(z == c && (x == b || x  == c)){
+//				b1++;
+//				
+//			}
+//			if(s1 == 0 && b1 == 0){
+//				o1 = 3;
+//			}
+//			System.out.println(s1 + "S, " + b1 + "B, " + o1 + "O");
+//			if(s1 == 3){
+//				System.out.println("쓰리 스트라이크 ! 잘 하셨습니다.");
+//				break;
+//			}
+//		}
+//		
+//		-------------------------------------------------------------------
+		//배열로  야구게임 만들기
+//		
+//
+//		int[] com = new int[3];
+//		int[] user = new int[3];
+//		int tmp = 0;
+//		int input = 0;
+//		while(com[0] != (tmp = (int)(Math.random() *9)+1)){
+//			com[1] = tmp;
+//		}
+//		while(com[0] != (tmp = (int)(Math.random() *9)+1) && com[1] != tmp){
+//			com[2] = tmp;
+//		}
+//		int number = com[0]*100 + com[1]*10 + com[2];
+//		
+//		System.out.println(number);
+//		Scanner scanner = new Scanner(System.in);
+//		
+//		while(true){
+//			int[] sbo = new int[3];
+//			System.out.println("중복되지 않는 3자리수를 입력하세요.");
+//			input = scanner.nextInt();
+//			for(int i = 0; i<sbo.length; i++){
+//				if(i == 0){
+//					sbo[i] = input/100;
+//				}else if(i == 1){
+//					sbo[i] = input %100/10;
+//				}else if(i == 2){
+//					sbo[i] = input % 10;
+//				}
+//				
+//			}
+//			
+//			for(int i = 1; i < 3; i++){
+//				if(user[i] == com[i]){
+//					sbo[0]++;
+//				}
+//				if(user[0] == com[1] || user[0] == com[2]){
+//					sbo[1]++;
+//				}else if(user[0] == com[0] && user[0] == com[1] || user[0] == com[1]){
+//					sbo[1]++;
+//				}
+//				if(user[1] == com[0] || user[1] == com[2]){
+//					sbo[1]++;
+//				}else if(user[1] == com[0] && user[1] == com[2] || user[1] == com[2]){
+//					sbo[1]++;
+//				}if(user[2] == com[0] || user[2] == com[1]){
+//					sbo[1]++;
+//				}else if(user[2] == com[2] && user[2] == com[0] || user[2] == com[0]){
+//					sbo[1]++;
+//				}if(sbo[0] == 0 && sbo[1] ==0){
+//					sbo[2] =3;
+//				}
+//				System.out.println(sbo[0] + "S, " + sbo[1] + "B, " + sbo[2] + "O");
+//				if(sbo[0] == 3){
+//					System.out.println(("쓰리 스트라이크 ! 잘 하셨습니다."));
+//					break;
+//				}
+//			}
+//		}
+//		
+//		
 		
-		int a = (int)(Math.random() *9)+1;
-		int b = 1;
-		int c = 1;
-		int tmp = 0;
-		int input = 0;
+	//----------------------------------------------------------------	
+//		완호
+//		  Scanner s= new Scanner(System.in);
+//	      
+//	      int[] answer = new int[3]; 
+//	      for(int i =0; i<answer.length;i++){
+//	         answer[i] = (int)(Math.random()*9)+1;
+//	         for(int j=0; j < i ;j++){
+//	            if(answer[i]==answer[j]){
+//	               i--;
+//	               break;
+//	            }
+//	         }
+//	      }
+//	      
+//	      System.out.println("정답: "+Arrays.toString(answer));
+//
+//	      while (true){
+//	         //result배열에 숫자입력
+//	         System.out.println("숫자를 3개를 입력해주세요 : ");
+//	         int[] result = new int[3];
+//	         for(int i=0; i<result.length;i++){
+//	            result[i] = Integer.parseInt(s.nextLine());
+//	         }
+//	         
+//	         int str = 0;
+//	         int ball = 0;
+//	         int out = 0;
+//	         int count =0;
+//	         System.out.println(Arrays.toString(result));
+//	         
+//	         for(int i=0; i<result.length; i++){
+//	            for(int j=0;j<answer.length;j++){
+//	               if(result[i]==answer[i]){
+//	                  str++;
+//	                  break;
+//	               }else if(result[i] ==answer[j]){
+//	                  ball++;
+//	               }
+//	            }
+//	            count++;
+//	         }
+//	         System.out.println(count+"차 시도 "+"str: "+ str + " ball: "+ ball+" out: "+(3-str-ball));
+//	      }
+//		------------------------------------------------------------------------------------------
+//		sem
 		
-		while(a != (tmp = (int)(Math.random() *9)+1)){
-			b = tmp;
-		}
-		while(a != (tmp = (int)(Math.random() *9)+1) && b != tmp){
-			c = tmp;
-		}
-		int number = a*100 + b*10 + c;	
 		
-		System.out.println(number);
-		Scanner scanner = new Scanner(System.in);
-		
-		
-		while( true ) {
-			int s1 = 0;
-			int b1 = 0;
-			int o1 = 0;
-			System.out.println("중복되지 않는 3자리수를 입력하세요:");
-			input = scanner.nextInt();
-			int x = input / 100;
-			int y = input % 100 / 10;
-			int z = input % 10;
-			if(x == a){
-				s1++;
-			}
-			if(y == b){
-				s1++;
-			}
-			if(z == c){
-				s1++;
-			}
-			if(x == b || x  == c){
-				b1++;
-			}else if(x == a && (x == b || x  == c)){
-				b1++;
+				int[] answer = new int[3];
+				int[] input = new int[answer.length];
 				
-			}
-			if(y == a || y  == c){
-				b1++;
-			}else if(y == b && (x == b || x  == c)){
-				b1++;
+				boolean isDuplicated;
+				do{
+					isDuplicated = false;
+					
+					for(int i = 0; i < answer.length; i++){
+						answer[i] = (int)(Math.random() * 9) + 1;
+					}
+					
+					for(int i = 0; i < answer.length; i++){
+						for(int j = 0; j < answer.length; j++){
+							if(i != j && answer[i] == answer[j]){
+								isDuplicated = true;
+							}
+						}
+					}
+				}while(isDuplicated);
 				
-			}			
-			if(z == a || z  == b){
-				b1++;
-			}else if(z == c && (x == b || x  == c)){
-				b1++;
-				
-			}
-			if(s1 == 0 && b1 == 0){
-				o1 = 3;
-			}
-			System.out.println(s1 + "S, " + b1 + "B, " + o1 + "O");
-			if(s1 == 3){
-				System.out.println("쓰리 스트라이크 ! 잘 하셨습니다.");
-				break;
-			}
-		}
+				Scanner s = new Scanner(System.in);
+				int count = 0;
+				while(true){
+					System.out.println(answer.length + "자리 숫자를 입력해주세요>");
+					int temp = Integer.parseInt(s.nextLine());
+					
+					int index = input.length - 1;
+					while(0 < temp){
+						input[index--] = temp % 10;
+						temp /= 10;
+					}
+					
+					int strike = 0;
+					int ball = 0;
+					int out = 0;
+					
+					for(int i = 0; i < answer.length; i++){
+						for(int j = 0; j < input.length; j++){
+							if(answer[i] == input[j]){
+								if(i == j){
+									strike++;
+								}else{
+									ball++;
+								}
+							}
+						}
+					}
+					out = answer.length - strike - ball;
+					
+					System.out.println(++count + "차 시도"
+							+ Arrays.toString(input).replace(", ", "") + " : "
+							+ strike + "S " + ball + "B " + out + "O");
+					System.out.println("-------------------------");
+					if(strike == answer.length){
+						System.out.println("정답입니다!!");
+						break;
+					}
+				}
+			
+
 		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
 		
 		

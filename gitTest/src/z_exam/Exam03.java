@@ -28,20 +28,20 @@ public class Exam03 {
 //	public static void main(String[] args) { 
 //		int numOfApples = 123;
 //		int sizeOfBucket = 10;
-//		int numOfBucket = ((int)((numOfApples/(float)(sizeOfBucket))+0.9f));
+//		int numOfBucket = ((int)(((numOfApples/(float)(sizeOfBucket))+0.9f)));
 //		System.out.println("필요한 바구니의 수:"+numOfBucket);
 //		
-////		나머지가 0이 아닌경우 그냥 나누고 0이 아닌경우 1을 더해줘라
+		//나머지가 0이 아닌경우 그냥 나누고 0이 아닌경우 1을 더해줘라
 //	}
 	
 //	[3-3]아래는 변수 의 값에 따라 num 양수 음수 을 ‘ ’, ‘ ’, ‘0’ 출력하는 코드이다 삼항 연산자를 이용해서 에 알맞은 코드를 넣으시오
 //	[Hint] 삼항 연산자를 두 번 사용하라.         //삼항연산자란 조건식 ? 반환값1 : 반환값2   //물음표 앞의 조건식에 따라 결괏값이 참이면 반환값1을 반환하고 거짓이면 반환값2를 반환
 
-	public static void main(String[] args) {
-		int num = 10;
-		System.out.println(num > 0 ? "양수":(num < 0 ? "음수" : "0"));
-
-	}
+//	public static void main(String[] args) {
+//		int num = 10;
+//		System.out.println(num > 0 ? "양수":(num < 0 ? "음수" : "0"));
+//
+//	}
 
 //	[3-4]아래는 변수 num의 값 중에서 백의 자리 이하를 버리는 코드이다 . 만일 변수 num 의 값이 ‘456’이라면 ‘400’이 되고, ‘111’이라면 ‘100’이 된다.
 //	알맞은 코드를 넣으시오.
@@ -128,6 +128,5 @@ public class Exam03 {
 		//'A'보다 크고 'Z'보다 작다면 (char)(ch+32)을  가져오고 아니면 ch를 가져온다
 		//대문자일 경우에 ch값에 32를 더해서 소문자로 만들어라 라는 뜻
 }
-
 
 
