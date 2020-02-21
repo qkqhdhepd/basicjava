@@ -1,6 +1,6 @@
 package z_exam;
 import java.util.*;
-public class TEST {
+public class Baseball_test {
 
 	public static void main(String[] args) {
 		

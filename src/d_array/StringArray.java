@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class StringArray {
 
 	public static void main(String[] args) {
-//		
+		
 //				
 //		
 //		String s  = new String("ABCD");// 참조형 타입을 초기화하는 방법
@@ -50,25 +50,24 @@ public class StringArray {
 //		str = "치킨 피자 돈까스 떡볶이";
 //		int idx = str.indexOf("피자"); //피자의 시작 인덱스를 반환한다.
 //		System.out.println(idx);
-//		
-//		
-//		String[] menus = {
-//				"치킨 18000원",
-//				"피자 9900원",
-//				"돈까스 8000원",
-//				"떡볶이 5000원"
-//		};
-//		
-//		for(int i = 0; i < menus.length; i++){
-//			String name = menus[i].substring(0, menus[i].indexOf(" "));
-//			System.out.println(name);
-//			
-//			int price = Integer.parseInt(
-//					menus[i].substring(
-//							menus[i].indexOf(" ")+1, menus[i].indexOf("원")));
-//			System.out.println(price);
-//		}
-//		
+		
+		
+		String[] menus = {
+				"1.쓸만한 단검,2000원",
+				"2.기사의 검,5000원",
+				"3.롱소드,7000원"	
+		};
+		
+		for(int i = 0; i < menus.length; i++){
+			String name = menus[i].substring(0, menus[i].indexOf(","));
+			System.out.println(name);
+			
+			int price = Integer.parseInt(
+					menus[i].substring(
+							menus[i].indexOf(",")+1, menus[i].indexOf("원")));
+			System.out.println(price);
+		}
+		
 //		str = "123456789";
 //		str = str.replace("3","짝");
 //		System.out.println(str);

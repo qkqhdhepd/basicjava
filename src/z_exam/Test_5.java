@@ -1,6 +1,6 @@
 package z_exam;
 
-public class Test_010 {
+public class Test_5 {
 
 	public static void main(String[] args) {
 //		[5-6] 다음은 거스름돈을 몇 개의 동전으로 지불할 수 있는지를 계산하는 문제이다.
